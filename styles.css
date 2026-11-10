@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa1 {
+    background: red;
+    width: 100px;
+    height: 100px;
+    position: static;
+    left: 500px;
+    opacity: 0.5;
+}
+
+.caixa2 {
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.caixa3 {
+    background: blue;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .caixa3 {
+        order: 1;
+    }
+
+    .caixa1 {
+        order: 2;
+        position: static !important;
+    }
+
+    .caixa2 {
+        order: 3;
+    }
+
+
+}
